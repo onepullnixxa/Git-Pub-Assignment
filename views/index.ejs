@@ -9,10 +9,20 @@
             color: blanchedalmond;
             background-color: steelblue;
         }
+        li {
+            text-transform: capitalize;
+        }
     </style>
     <title>Document</title>
 </head>
 <body>
     <h1>Welcome To gitPub</h1>
+    <ul>
+        <% for(let i = 0; i < allDrinks.length; i++) { %>
+        <li>
+            <a href="/fruits/<%=i%>"><%=allDrinks[i].name%></a>
+        </li>
+    <% } %>
+    </ul>
 </body>
 </html>
